@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
@@ -8,12 +8,57 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<meta name="description" content="Nina Carducci, photographe pour concerts, ma-riages, portraits et plus. Services personnalisés de shooting, retouche, et albums.">
+	<meta name="description" content="Nina Carducci, photographe pour concerts, mariages, portraits et plus. Services personnalisés de shooting, retouche, et albums.">
 	<title>Nina Carducci - Photographe – Shooting, Retouches et Albums photo</title>
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+
+	<!-- OpenGraph Meta Tags -->
+	<meta property="og:title" content="Nina Carducci Photographe">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://nina-carducci.github.io/">
+	<meta property="og:image" content="https://nina-carducci.github.io/assets/images/camera.png">
+	<meta property="og:description" content="Nina Carducci est une photographe qui couvre tous vos événements comme les concerts, mariages, portraits, entreprises. Capturer vos moments précieux avec des services de shooting, retouche et albums personnalisés.’">
+	<meta property="og:site_name" content="Nina Carducci Photographe">
+
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci Photography">
+	<meta name="twitter:description" content="Nina Carducci est une photographe qui couvre tous vos événements comme les concerts, mariages, portraits, entreprises. Capturer vos moments précieux avec des services de shooting, retouche et albums personnalisés.">
+	<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/camera.png">
+	<meta name="twitter:site" content="@nina_carducci">
+	<meta name="twitter:url" content="https://nina-carducci.github.io/"/>
+
+	 <!-- RICH SNIPPET GOOGLE -->
+<!-- RICH SNIPPET GOOGLE -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Nina Carducci",
+	  "url": "https://nina-carducci.github.io",
+	  "description": "Nina Carducci est une photographe spécialisée dans les concerts, mariages, portraits et plus. Elle propose des services personnalisés tels que le shooting, la retouche et la création d'albums.",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "68 avenue Alsace-Lorraine",
+		"addressLocality": "Bordeaux",
+		"addressRegion": "Nouvelle-Aquitaine",
+		"postalCode": "33200", 
+		"addressCountry": "France"
+	  },
+	  "contactPoint": {
+		"@type": "ContactPoint",
+		"contactType": "Sales", 
+		"email": "nina.carducci@gmail.com",
+		"telephone": "05 56 67 78 89"
+	  },
+	  "sameAs": [
+		"https://twitter.com/ninacarducci"
+	  ]
+	}
+	</script>
 </head>
 <body>
 <div class="top-header">
@@ -142,11 +187,13 @@
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label>Nom</label>
+				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
-				<label>Email</label>
+				
+				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
-				<label>Message</label>
+				
+				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
